@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -24,13 +24,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- SwiperJS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <!-- setup -->
     <style>
       html {
         scroll-behavior: smooth;
@@ -40,11 +33,10 @@
       }
     </style>
 
-    <title>Sintaks | About</title>
+    <title>Sintaks | Materi Python</title>
   </head>
   <body class="text-slate-100 bg-gray-900">
     <header class="py-4 fixed w-full top-0 z-50 bg-gray-900" id="navbar">
-      <!-- Navbar Start -->
       <nav
         class="flex justify-between mx-8 py-2 lg:mx-24 md:mx-16 items-center"
       >
@@ -59,15 +51,13 @@
           <li
             class="cursor-pointer hover:text-emerald-400 transition duration-200"
           >
-            <a href="index.html">Home</a>
+            <a href="/index.html">Home</a>
           </li>
           <li
             class="cursor-pointer hover:text-emerald-400 transition duration-200"
           >
-            <a href="materi.html">Materi</a>
+            <a href="/materi.html">Materi</a>
           </li>
-
-          <!-- Dropdown Kelas -->
           <li class="relative">
             <button
               id="kelasToggle"
@@ -82,109 +72,108 @@
             >
               <li>
                 <a
-                  href="kelas1.html"
+                  href="/kelas1.html"
                   class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
                   >Batch 1</a
                 >
               </li>
               <li>
                 <a
-                  href="kelas2.html"
+                  href="/kelas2.html"
                   class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
                   >Batch 2</a
                 >
               </li>
             </ul>
           </li>
-
-          <a href="contact.html">
-            <li
-              class="cursor-pointer hover:text-emerald-400 transition duration-200"
-            >
-              Kontak
-            </li>
-          </a>
-          <a href="#">
-            <li
-              class="cursor-pointer hover:text-emerald-400 transition duration-200"
-            >
-              Tentang Kami
-            </li>
-          </a>
-          <a href="login.html">
-            <li
-              class="cursor-pointer text-emerald-400 hover:text-emerald-500 transition duration-200"
-            >
-              Login
-            </li>
-          </a>
+          <li
+            class="cursor-pointer hover:text-emerald-400 transition duration-200"
+          >
+            <a href="/contact.html">Kontak</a>
+          </li>
+          <li
+            class="cursor-pointer hover:text-emerald-400 transition duration-200"
+          >
+            <a href="/about.html">Tentang Kami</a>
+          </li>
+          <li
+            class="cursor-pointer text-emerald-400 hover:text-emerald-500 transition duration-200"
+          >
+            <a href="/login.html">Login</a>
+          </li>
         </ul>
       </nav>
-      <!-- Navbar End -->
     </header>
 
-    <main class="py-20">
-      <!-- Tentang Kami -->
-      <section class="mx-24 pt-10">
-        <div class="text-center">
-          <h1 class="font-bold text-5xl mb-4 text-emerald-400">Tentang Kami</h1>
-          <p class="text-xl text-slate-300 max-w-4xl mx-auto">
-            Sintaks adalah platform pembelajaran coding yang bertujuan untuk
-            membuat proses belajar lebih mudah, interaktif, dan menyenangkan.
-            Kami menyediakan materi yang ramah pemula, terstruktur, dan
-            disesuaikan dengan perkembangan teknologi terkini.
+    <main class="pt-36 pb-20 px-24">
+      <div class="grid grid-cols-6 grid-rows-10 gap-4">
+        <!-- Sidebar Materi -->
+        <div
+          class="col-span-2 row-span-10 space-y-6 pr-6 border-r-2 border-gray-700"
+        >
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              Pengenalan Python
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Bahasa pemrograman populer yang mudah dipelajari dan digunakan.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              Tipe Data & Variabel
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Memahami tipe data dasar, variabel, dan konversi tipe di Python.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">Kontrol Alur</h3>
+            <p class="text-sm text-gray-400 mt-1">
+              If, for, while, dan pengendalian alur program.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              Fungsi & Modul
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Membuat fungsi, modul, dan memahami scope variabel.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">OOP Python</h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Pengenalan Object-Oriented Programming di Python.
+            </p>
+          </div>
+        </div>
+
+        <!-- Konten Utama -->
+        <div class="col-span-4 row-span-10 col-start-3">
+          <h2 class="text-3xl font-bold text-emerald-400 mb-4">
+            Detail Materi Python
+          </h2>
+          <p class="text-lg text-gray-400 leading-relaxed">
+            Pilih materi di sebelah kiri untuk melihat penjelasan lengkapnya. Di
+            kelas ini kamu akan belajar dasar Python mulai dari sintaks, tipe
+            data, variabel, kontrol alur, fungsi, modul, hingga paradigma OOP.
+            Python sangat cocok untuk pemula maupun profesional yang ingin
+            memperluas keterampilan mereka di bidang pengembangan aplikasi, data
+            science, automasi, dan lain-lain.
           </p>
         </div>
-
-        <div class="mt-16 grid md:grid-cols-3 gap-10">
-          <div
-            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
-          >
-            <i class="fa-solid fa-bullseye text-4xl text-emerald-400 mb-4"></i>
-            <h2 class="font-semibold text-2xl mb-2">Visi Kami</h2>
-            <p>
-              Menjadi platform pembelajaran teknologi yang inklusif dan
-              memberikan dampak nyata bagi generasi muda Indonesia.
-            </p>
-          </div>
-          <div
-            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
-          >
-            <i class="fa-solid fa-eye text-4xl text-emerald-400 mb-4"></i>
-            <h2 class="font-semibold text-2xl mb-2">Misi Kami</h2>
-            <p>
-              Menyediakan materi berkualitas, mudah dipahami, serta komunitas
-              yang suportif dalam mendukung proses belajar.
-            </p>
-          </div>
-          <div
-            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
-          >
-            <i class="fa-solid fa-users text-4xl text-emerald-400 mb-4"></i>
-            <h2 class="font-semibold text-2xl mb-2">Tim Kami</h2>
-            <p>
-              Kami terdiri dari tim developer, designer, dan educator yang
-              berdedikasi untuk menghadirkan pengalaman belajar terbaik bagi
-              semua.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="overflow-hidden mt-20">
-        <div class="flex gap-24 justify-center">
-          <img src="assets/img/html.png" class="h-20" />
-          <img src="assets/img/css.png" class="h-20" />
-          <img src="assets/img/js.png" class="h-20" />
-          <img src="assets/img/react.png" class="h-20" />
-          <img src="assets/img/tw.png" class="h-20" />
-          <img src="assets/img/html.png" class="h-20" />
-          <img src="assets/img/css.png" class="h-20" />
-          <img src="assets/img/js.png" class="h-20" />
-          <img src="assets/img/react.png" class="h-20" />
-          <img src="assets/img/tw.png" class="h-20" />
-        </div>
-      </section>
+      </div>
     </main>
 
     <footer class="px-24">
@@ -208,34 +197,28 @@
             <li
               class="cursor-pointer hover:text-emerald-400 transition duration-200"
             >
-              <a href="index.html">Home</a>
+              <a href="/index.html">Home</a>
             </li>
-            <a href="materi.html">
-              <li
-                class="cursor-pointer hover:text-emerald-400 transition duration-200"
-              >
-                Materi
-              </li>
-            </a>
             <li
               class="cursor-pointer hover:text-emerald-400 transition duration-200"
             >
-              Kelas
+              <a href="/materi.html">Materi</a>
             </li>
-            <a href="contact.html">
-              <li
-                class="cursor-pointer hover:text-emerald-400 transition duration-200"
-              >
-                Kontak
-              </li>
-            </a>
-            <a href="#">
-              <li
-                class="cursor-pointer hover:text-emerald-400 transition duration-200"
-              >
-                Tentang Kami
-              </li>
-            </a>
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              <a href="#">Kelas</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              <a href="/contact.html">Kontak</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              <a href="/about.html">Tentang Kami</a>
+            </li>
           </ul>
         </div>
 
@@ -282,6 +265,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>

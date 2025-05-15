@@ -40,7 +40,9 @@
       }
     </style>
 
-    <title>Sintaks | About</title>
+    <title>
+      Sintaks | Belajar Coding Jadi Lebih Mudah dan Lebih Asik di Sintaks!
+    </title>
   </head>
   <body class="text-slate-100 bg-gray-900">
     <header class="py-4 fixed w-full top-0 z-50 bg-gray-900" id="navbar">
@@ -59,12 +61,12 @@
           <li
             class="cursor-pointer hover:text-emerald-400 transition duration-200"
           >
-            <a href="index.html">Home</a>
+            <a href="/index.html">Home</a>
           </li>
           <li
             class="cursor-pointer hover:text-emerald-400 transition duration-200"
           >
-            <a href="materi.html">Materi</a>
+            <a href="/materi.html">Materi</a>
           </li>
 
           <!-- Dropdown Kelas -->
@@ -82,14 +84,14 @@
             >
               <li>
                 <a
-                  href="kelas1.html"
+                  href="/kelas1.html"
                   class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
                   >Batch 1</a
                 >
               </li>
               <li>
                 <a
-                  href="kelas2.html"
+                  href="/kelas2.html"
                   class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
                   >Batch 2</a
                 >
@@ -97,21 +99,21 @@
             </ul>
           </li>
 
-          <a href="contact.html">
+          <a href="/contact.html">
             <li
               class="cursor-pointer hover:text-emerald-400 transition duration-200"
             >
               Kontak
             </li>
           </a>
-          <a href="#">
+          <a href="/about.html">
             <li
               class="cursor-pointer hover:text-emerald-400 transition duration-200"
             >
               Tentang Kami
             </li>
           </a>
-          <a href="login.html">
+          <a href="/login.html">
             <li
               class="cursor-pointer text-emerald-400 hover:text-emerald-500 transition duration-200"
             >
@@ -123,68 +125,79 @@
       <!-- Navbar End -->
     </header>
 
-    <main class="py-20">
-      <!-- Tentang Kami -->
-      <section class="mx-24 pt-10">
-        <div class="text-center">
-          <h1 class="font-bold text-5xl mb-4 text-emerald-400">Tentang Kami</h1>
-          <p class="text-xl text-slate-300 max-w-4xl mx-auto">
-            Sintaks adalah platform pembelajaran coding yang bertujuan untuk
-            membuat proses belajar lebih mudah, interaktif, dan menyenangkan.
-            Kami menyediakan materi yang ramah pemula, terstruktur, dan
-            disesuaikan dengan perkembangan teknologi terkini.
+    <main class="pt-36 pb-20 px-24">
+      <div class="grid grid-cols-6 grid-rows-10 gap-4">
+        <!-- Sidebar Materi dengan border kanan -->
+        <div
+          class="col-span-2 row-span-10 space-y-6 pr-6 border-r-2 border-gray-700"
+        >
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              Pengenalan React
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Mengenal dasar dan konsep React serta ekosistemnya.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              Komponen & Props
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Membuat komponen dinamis dan memahami props di React.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              State & Event Handling
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Mengelola state dan membuat event yang interaktif.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              Routing & Navigasi
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Belajar React Router untuk navigasi halaman SPA.
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg p-4 hover:ring-2 hover:ring-emerald-500 transition duration-200 cursor-pointer"
+          >
+            <h3 class="text-lg font-semibold text-emerald-400">
+              Hooks & Fetch Data
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+              Menggunakan Hooks seperti useState & useEffect untuk data dinamis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Konten Utama -->
+        <div class="col-span-4 row-span-10 col-start-3">
+          <h2 class="text-3xl font-bold text-emerald-400 mb-4">
+            Detail Materi React
+          </h2>
+          <p class="text-lg text-gray-400 leading-relaxed">
+            Pilih materi di sebelah kiri untuk melihat penjelasan lengkapnya. Di
+            kelas ini kamu akan belajar React secara menyeluruh, mulai dari
+            mengenal komponennya, cara pengelolaan state, routing antar halaman,
+            sampai bagaimana menggunakan hooks dan fetching data API. Semua
+            materi disusun dengan studi kasus yang relevan dan siap pakai di
+            dunia kerja.
           </p>
         </div>
-
-        <div class="mt-16 grid md:grid-cols-3 gap-10">
-          <div
-            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
-          >
-            <i class="fa-solid fa-bullseye text-4xl text-emerald-400 mb-4"></i>
-            <h2 class="font-semibold text-2xl mb-2">Visi Kami</h2>
-            <p>
-              Menjadi platform pembelajaran teknologi yang inklusif dan
-              memberikan dampak nyata bagi generasi muda Indonesia.
-            </p>
-          </div>
-          <div
-            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
-          >
-            <i class="fa-solid fa-eye text-4xl text-emerald-400 mb-4"></i>
-            <h2 class="font-semibold text-2xl mb-2">Misi Kami</h2>
-            <p>
-              Menyediakan materi berkualitas, mudah dipahami, serta komunitas
-              yang suportif dalam mendukung proses belajar.
-            </p>
-          </div>
-          <div
-            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
-          >
-            <i class="fa-solid fa-users text-4xl text-emerald-400 mb-4"></i>
-            <h2 class="font-semibold text-2xl mb-2">Tim Kami</h2>
-            <p>
-              Kami terdiri dari tim developer, designer, dan educator yang
-              berdedikasi untuk menghadirkan pengalaman belajar terbaik bagi
-              semua.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="overflow-hidden mt-20">
-        <div class="flex gap-24 justify-center">
-          <img src="assets/img/html.png" class="h-20" />
-          <img src="assets/img/css.png" class="h-20" />
-          <img src="assets/img/js.png" class="h-20" />
-          <img src="assets/img/react.png" class="h-20" />
-          <img src="assets/img/tw.png" class="h-20" />
-          <img src="assets/img/html.png" class="h-20" />
-          <img src="assets/img/css.png" class="h-20" />
-          <img src="assets/img/js.png" class="h-20" />
-          <img src="assets/img/react.png" class="h-20" />
-          <img src="assets/img/tw.png" class="h-20" />
-        </div>
-      </section>
+      </div>
     </main>
 
     <footer class="px-24">
@@ -208,9 +221,9 @@
             <li
               class="cursor-pointer hover:text-emerald-400 transition duration-200"
             >
-              <a href="index.html">Home</a>
+              <a href="/index.html">Home</a>
             </li>
-            <a href="materi.html">
+            <a href="/materi.html">
               <li
                 class="cursor-pointer hover:text-emerald-400 transition duration-200"
               >
@@ -222,14 +235,14 @@
             >
               Kelas
             </li>
-            <a href="contact.html">
+            <a href="/contact.html">
               <li
                 class="cursor-pointer hover:text-emerald-400 transition duration-200"
               >
                 Kontak
               </li>
             </a>
-            <a href="#">
+            <a href="/about.html">
               <li
                 class="cursor-pointer hover:text-emerald-400 transition duration-200"
               >
@@ -282,6 +295,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
