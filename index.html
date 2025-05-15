@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FA -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SwiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- setup -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <title>
+      Sintaks | Belajar Coding Jadi Lebih Mudah dan Lebih Asik di Sintaks!
+    </title>
+  </head>
+  <body class="text-slate-100 bg-gray-900">
+    <header class="py-4 fixed w-full top-0 z-50 bg-gray-900" id="navbar">
+      <!-- Navbar Start -->
+      <nav
+        class="flex justify-between mx-8 py-2 lg:mx-24 md:mx-16 items-center"
+      >
+        <div>
+          <a href="#">
+            <i
+              class="fa-solid fa-code text-xl hover:text-emerald-400 cursor-pointer transition duration-200"
+            ></i>
+          </a>
+        </div>
+        <ul class="flex gap-8 max-md:hidden">
+          <li
+            class="cursor-pointer hover:text-emerald-400 transition duration-200"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="cursor-pointer hover:text-emerald-400 transition duration-200"
+          >
+            <a href="materi.html">Materi</a>
+          </li>
+
+          <!-- Dropdown Kelas -->
+          <li class="relative">
+            <button
+              id="kelasToggle"
+              class="flex items-center gap-1 hover:text-emerald-400 transition duration-200 cursor-pointer"
+            >
+              Kelas
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </button>
+            <ul
+              id="kelasMenu"
+              class="absolute top-full left-0 mt-2 w-32 rounded-md shadow-lg bg-gray-800 hidden"
+            >
+              <li>
+                <a
+                  href="kelas1.html"
+                  class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
+                  >Batch 1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kelas2.html"
+                  class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
+                  >Batch 2</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <a href="contact.html">
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              Kontak
+            </li>
+          </a>
+          <a href="about.html">
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              Tentang Kami
+            </li>
+          </a>
+          <a href="login.html">
+            <li
+              class="cursor-pointer text-emerald-400 hover:text-emerald-500 transition duration-200"
+            >
+              Login
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+
+    <main class="pt-20">
+      <!-- Hero -->
+      <section class="mx-24 py-20 flex">
+        <div>
+          <h1 class="font-bold text-5xl">Sintaks</h1>
+          <p class="mt-3 text-xl">
+            Belajar Coding Jadi Lebih Mudah dan Lebih Asik di Sintaks!
+          </p>
+          <p class="md-3 text-xl">
+            Pelajari HTML, CSS, dan JavaScript dengan materi interaktif dan
+            mudah dipahami.
+          </p>
+          <a href="kelas1.html">
+            <button
+              class="mt-4 px-3 py-2 bg-emerald-800 rounded-md cursor-pointer hover:bg-emerald-900 transition duration-200"
+            >
+              Mulai Belajar!
+            </button>
+          </a>
+          <button
+            class="mt-4 px-3 py-2 rounded-md cursor-pointer hover:text-emerald-400 transition duration-200"
+          >
+            <a href="#materi">Lihat Materi</a>
+          </button>
+        </div>
+
+        <div class="w-75 absolute right-30 top-30">
+          <img src="assets/img/hero.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Kelas Start -->
+      <section class="mx-24">
+        <div>
+          <h1 class="font-semibold text-xl text-emerald-400 pt-20" id="materi">
+            Materi
+          </h1>
+          <p class="text-2xl font-semibold mt-1">Mau Belajar Apa?</p>
+          <p class="mt-1">Pilih materi yang ingin kamu pelajari.</p>
+        </div>
+
+        <div class="flex flex-row mt-10 gap-10">
+          <div
+            class="rounded-md bg-gray-700 py-5 px-4 cursor-pointer hover:-translate-y-1 transition duration-200"
+          >
+            <img src="assets/img/html.png" alt="html" class="w-15" />
+            <h1 class="my-2 font-bold">HTML</h1>
+            <p>
+              Mulailah perjalanan codingmu dengan mempelajari HTML, bahasa dasar
+              yang membentuk struktur setiap halaman web di internet.
+            </p>
+          </div>
+          <div
+            class="rounded-md bg-gray-700 py-5 px-4 cursor-pointer hover:-translate-y-1 transition duration-200"
+          >
+            <img src="assets/img/css.png" alt="css" class="w-15" />
+            <h1 class="my-2 font-bold">CSS</h1>
+            <p>
+              Pelajari bagaimana membuat tampilan website menjadi menarik dan
+              responsif menggunakan CSS — dari warna, layout, hingga animasi.
+            </p>
+          </div>
+          <div
+            class="rounded-md bg-gray-700 py-5 px-4 cursor-pointer hover:-translate-y-1 transition duration-200"
+          >
+            <img
+              src="assets/img/js.png"
+              alt="JavaScript"
+              class="w-15 rounded-md"
+            />
+            <h1 class="my-2 font-bold">JavaScript</h1>
+            <p>
+              Temukan cara menambahkan interaksi dan logika ke dalam websitemu
+              dengan JavaScript, bahasa pemrograman inti di dunia web modern.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <p
+            class="hover:text-emerald-400 transition duration-200 cursor-pointer"
+          >
+            <a href="materi.html">Lihat Selengkapnya</a>
+          </p>
+        </div>
+      </section>
+      <!-- Kelas End -->
+
+      <!-- Review Start -->
+      <section class="px-24 py-20">
+        <div>
+          <h1 class="font-semibold text-xl text-emerald-400" id="materi">
+            Review
+          </h1>
+          <p class="text-2xl font-semibold mt-1">Apa Kata Mereka?</p>
+          <p class="mt-1">
+            Dengarkan pengalaman belajar dari pengguna lain yang telah mencoba
+            platform ini.
+          </p>
+
+          <div class="swiper mySwiper mt-10">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-gray-700 p-6 rounded-md">
+                <p>
+                  "Belajar di Sintaks seru banget! Materinya jelas dan gampang
+                  dipahami."
+                </p>
+                <h3 class="font-semibold mt-4 text-emerald-400">
+                  – Sarah, Mahasiswa
+                </h3>
+              </div>
+              <div class="swiper-slide bg-gray-700 p-6 rounded-md">
+                <p>
+                  "Gak nyangka bisa ngoding HTML dan CSS hanya dalam beberapa
+                  hari!"
+                </p>
+                <h3 class="font-semibold mt-4 text-emerald-400">
+                  – Dimas, Siswa SMA
+                </h3>
+              </div>
+              <div class="swiper-slide bg-gray-700 p-6 rounded-md">
+                <p>
+                  "Platform ini cocok banget buat pemula. Navigasinya simpel dan
+                  gak bikin pusing."
+                </p>
+                <h3 class="font-semibold mt-4 text-emerald-400">
+                  – Lita, Fresh Graduate
+                </h3>
+              </div>
+              <div class="swiper-slide bg-gray-700 p-6 rounded-md">
+                <p>
+                  "Aku suka cara penyampaian materinya. Langsung praktik, jadi
+                  cepat paham!"
+                </p>
+                <h3 class="font-semibold mt-4 text-emerald-400">
+                  – Budi, Junior Web Developer
+                </h3>
+              </div>
+              <div class="swiper-slide bg-gray-700 p-6 rounded-md">
+                <p>
+                  "UI-nya keren dan responsif. Belajar jadi lebih nyaman dan
+                  fun!"
+                </p>
+                <h3 class="font-semibold mt-4 text-emerald-400">
+                  – Nia, Content Creator
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Review End -->
+    </main>
+
+    <footer class="px-24">
+      <div class="h-px bg-gray-800 my-4 mb-10"></div>
+      <div class="flex justify-between">
+        <div class="flex flex-col gap-2">
+          <a href="#">
+            <i
+              class="mb-2 fa-solid fa-code text-4xl cursor-pointer transition duration-200"
+            ></i>
+          </a>
+          <a href="#">
+            <p class="text-3xl font-bold">Sintaks</p>
+          </a>
+          <p>Belajar Coding Jadi Lebih Mudah dan Lebih Asik di Sintaks!</p>
+        </div>
+
+        <div>
+          <h1 class="font-bold mb-6">Links</h1>
+          <ul class="flex flex-col gap-1">
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              <a href="#">Home</a>
+            </li>
+            <a href="materi.html">
+              <li
+                class="cursor-pointer hover:text-emerald-400 transition duration-200"
+              >
+                Materi
+              </li>
+            </a>
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              Kelas
+            </li>
+            <a href="contact.html">
+              <li
+                class="cursor-pointer hover:text-emerald-400 transition duration-200"
+              >
+                Kontak
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="cursor-pointer hover:text-emerald-400 transition duration-200"
+              >
+                Tentang Kami
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="font-bold mb-6">Ikuti Kami</h1>
+          <div class="flex gap-10 text-2xl">
+            <a href="https://github.com/akira4n" target="_blank">
+              <i
+                class="fa-brands fa-github hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a
+              href="https://www.instagram.com/akiraimissyousomuch/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-instagram hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a href="https://www.x.com/akiraimissyou" target="_blank">
+              <i
+                class="fa-brands fa-x-twitter hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a href="https://youtube.com/syawaluddinalayyubi" target="_blank">
+              <i
+                class="fa-brands fa-youtube hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/syawaluddin-al-ayyubi/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-linkedin hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-10 text-center text-gray-500">
+        © 2025 Akira4n. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- swiper -->
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1280: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

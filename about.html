@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FA -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SwiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- setup -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <title>Sintaks | About</title>
+  </head>
+  <body class="text-slate-100 bg-gray-900">
+    <header class="py-4 fixed w-full top-0 z-50 bg-gray-900" id="navbar">
+      <!-- Navbar Start -->
+      <nav
+        class="flex justify-between mx-8 py-2 lg:mx-24 md:mx-16 items-center"
+      >
+        <div>
+          <a href="#">
+            <i
+              class="fa-solid fa-code text-xl hover:text-emerald-400 cursor-pointer transition duration-200"
+            ></i>
+          </a>
+        </div>
+        <ul class="flex gap-8 max-md:hidden">
+          <li
+            class="cursor-pointer hover:text-emerald-400 transition duration-200"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="cursor-pointer hover:text-emerald-400 transition duration-200"
+          >
+            <a href="materi.html">Materi</a>
+          </li>
+
+          <!-- Dropdown Kelas -->
+          <li class="relative">
+            <button
+              id="kelasToggle"
+              class="flex items-center gap-1 hover:text-emerald-400 transition duration-200 cursor-pointer"
+            >
+              Kelas
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </button>
+            <ul
+              id="kelasMenu"
+              class="absolute top-full left-0 mt-2 w-32 rounded-md shadow-lg bg-gray-800 hidden"
+            >
+              <li>
+                <a
+                  href="kelas1.html"
+                  class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
+                  >Batch 1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="kelas2.html"
+                  class="block px-4 py-2 hover:bg-emerald-500 rounded-md hover:text-white"
+                  >Batch 2</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <a href="contact.html">
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              Kontak
+            </li>
+          </a>
+          <a href="#">
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              Tentang Kami
+            </li>
+          </a>
+          <a href="login.html">
+            <li
+              class="cursor-pointer text-emerald-400 hover:text-emerald-500 transition duration-200"
+            >
+              Login
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+
+    <main class="py-20">
+      <!-- Tentang Kami -->
+      <section class="mx-24 pt-10">
+        <div class="text-center">
+          <h1 class="font-bold text-5xl mb-4 text-emerald-400">Tentang Kami</h1>
+          <p class="text-xl text-slate-300 max-w-4xl mx-auto">
+            Sintaks adalah platform pembelajaran coding yang bertujuan untuk
+            membuat proses belajar lebih mudah, interaktif, dan menyenangkan.
+            Kami menyediakan materi yang ramah pemula, terstruktur, dan
+            disesuaikan dengan perkembangan teknologi terkini.
+          </p>
+        </div>
+
+        <div class="mt-16 grid md:grid-cols-3 gap-10">
+          <div
+            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
+          >
+            <i class="fa-solid fa-bullseye text-4xl text-emerald-400 mb-4"></i>
+            <h2 class="font-semibold text-2xl mb-2">Visi Kami</h2>
+            <p>
+              Menjadi platform pembelajaran teknologi yang inklusif dan
+              memberikan dampak nyata bagi generasi muda Indonesia.
+            </p>
+          </div>
+          <div
+            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
+          >
+            <i class="fa-solid fa-eye text-4xl text-emerald-400 mb-4"></i>
+            <h2 class="font-semibold text-2xl mb-2">Misi Kami</h2>
+            <p>
+              Menyediakan materi berkualitas, mudah dipahami, serta komunitas
+              yang suportif dalam mendukung proses belajar.
+            </p>
+          </div>
+          <div
+            class="bg-gray-700 rounded-md p-6 hover:-translate-y-1 transition duration-200"
+          >
+            <i class="fa-solid fa-users text-4xl text-emerald-400 mb-4"></i>
+            <h2 class="font-semibold text-2xl mb-2">Tim Kami</h2>
+            <p>
+              Kami terdiri dari tim developer, designer, dan educator yang
+              berdedikasi untuk menghadirkan pengalaman belajar terbaik bagi
+              semua.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="overflow-hidden mt-20">
+        <div class="flex gap-24 justify-center">
+          <img src="assets/img/html.png" class="h-20" />
+          <img src="assets/img/css.png" class="h-20" />
+          <img src="assets/img/js.png" class="h-20" />
+          <img src="assets/img/react.png" class="h-20" />
+          <img src="assets/img/tw.png" class="h-20" />
+          <img src="assets/img/html.png" class="h-20" />
+          <img src="assets/img/css.png" class="h-20" />
+          <img src="assets/img/js.png" class="h-20" />
+          <img src="assets/img/react.png" class="h-20" />
+          <img src="assets/img/tw.png" class="h-20" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="px-24">
+      <div class="h-px bg-gray-800 my-4 mb-10"></div>
+      <div class="flex justify-between">
+        <div class="flex flex-col gap-2">
+          <a href="#">
+            <i
+              class="mb-2 fa-solid fa-code text-4xl cursor-pointer transition duration-200"
+            ></i>
+          </a>
+          <a href="#">
+            <p class="text-3xl font-bold">Sintaks</p>
+          </a>
+          <p>Belajar Coding Jadi Lebih Mudah dan Lebih Asik di Sintaks!</p>
+        </div>
+
+        <div>
+          <h1 class="font-bold mb-6">Links</h1>
+          <ul class="flex flex-col gap-1">
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <a href="materi.html">
+              <li
+                class="cursor-pointer hover:text-emerald-400 transition duration-200"
+              >
+                Materi
+              </li>
+            </a>
+            <li
+              class="cursor-pointer hover:text-emerald-400 transition duration-200"
+            >
+              Kelas
+            </li>
+            <a href="contact.html">
+              <li
+                class="cursor-pointer hover:text-emerald-400 transition duration-200"
+              >
+                Kontak
+              </li>
+            </a>
+            <a href="#">
+              <li
+                class="cursor-pointer hover:text-emerald-400 transition duration-200"
+              >
+                Tentang Kami
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="font-bold mb-6">Ikuti Kami</h1>
+          <div class="flex gap-10 text-2xl">
+            <a href="https://github.com/akira4n" target="_blank">
+              <i
+                class="fa-brands fa-github hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a
+              href="https://www.instagram.com/akiraimissyousomuch/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-instagram hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a href="https://www.x.com/akiraimissyou" target="_blank">
+              <i
+                class="fa-brands fa-x-twitter hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a href="https://youtube.com/syawaluddinalayyubi" target="_blank">
+              <i
+                class="fa-brands fa-youtube hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/syawaluddin-al-ayyubi/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-linkedin hover:text-emerald-400 transition duration-200 cursor-pointer"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-10 text-center text-gray-500">
+        © 2025 Akira4n. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
